@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La carta que volvió a casa</title>
+
+  <!-- Fuente manuscrita -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PÉTALOS -->
+<div class="petals">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<audio id="music" src="musica.mp3"></audio>
+
+<!-- ESCENA 1 — SOBRE -->
+<section class="scene active" id="scene1">
+  <div class="envelope-wrapper" onclick="openEnvelope()">
+    <div class="envelope">
+      <div class="back"></div>
+      <div class="paper"></div>
+      <div class="front"></div>
+      <div class="flap"></div>
+      <div class="seal">👑</div>
+    </div>
+  </div>
+  <p class="subtitle">Este mensaje fue escrito solo para ti</p>
+</section>
+
+<!-- ESCENA 2 — CARTA -->
+<section class="scene" id="scene2">
+  <div class="letter" onclick="nextScene()">
+    <p class="type">Hola amorcito,</p>
+    <p class="type delay">
+      Si estás leyendo esto, es porque algo muy importante está a punto de pasar.
+    </p>
+    <button class="continue-btn">Sigue leyendo ❤️</button>
+  </div>
+</section>
+
+<!-- ESCENA 3 — GALERÍA -->
+<section class="scene" id="scene3">
+  <img id="galleryImage" src="img1.jpg" class="gallery-img">
+  <div id="galleryText" class="gallery-text">
+    <strong>Aquí empezó todo.</strong><br>
+    Y sin darme cuenta, empezaste a ser mi lugar favorito.
+  </div>
+  <button class="continue-btn" onclick="nextGallery()">Siguiente recuerdo ✨</button>
+</section>
+
+<!-- ESCENA 4 — FRASES -->
+<section class="scene" id="scene4" onclick="nextPhrase()">
+  <p id="phrase"></p>
+  <button class="continue-btn">Continúa 💕</button>
+</section>
+
+<!-- ESCENA 5 — PREGUNTA -->
+<section class="scene" id="scene5">
+  <h1>¿Quieres ser mi San Valentín?</h1>
+  <div class="buttons">
+    <button onclick="accept()">💖 Sí</button>
+    <button id="noBtn">❌ No</button>
+  </div>
+</section>
+
+<!-- ESCENA 6 — ACEPTACIÓN -->
+<section class="scene" id="scene6">
+  <h1>Sabía que dirías que sí.</h1>
+  <p>Gracias por elegirnos.</p>
+</section>
+
+<!-- ESCENA 7 — ENVÍO -->
+<section class="scene" id="scene7">
+  <div class="final-envelope">
+    <p>Muchas gracias por su respuesta.</p>
+  </div>
+</section>
+
+<!-- ESCENA FINAL -->
+<section class="scene" id="scene8">
+  <div class="plane">✈️</div>
+  <img src="yo.jpg" class="final-img">
+  <p><strong>Respuesta enviada.</strong><br>Y recibida con una sonrisa.</p>
+  <small>Feliz San Valentín.</small>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
