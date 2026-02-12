@@ -180,9 +180,74 @@ body {
 
 /* MÓVIL */
 @media (max-width: 768px) {
-  .letter { width: 90%; padding: 25px; }
-  .gallery-img { width: 220px; height: 300px; }
-  #phrase { font-size: 22px; }
-  h1 { font-size: 26px; }
-  .continue-btn { width: 80%; }
+
+  body {
+    font-size: 20px;
+  }
+
+  /* SOBRE MÁS GRANDE */
+  .envelope {
+    width: 85vw;
+    height: 55vw;
+    max-width: 340px;
+    max-height: 220px;
+  }
+
+  .seal {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+
+  /* CARTA */
+  .letter {
+    width: 90%;
+    padding: 30px;
+    font-size: 22px;
+  }
+
+  /* IMÁGENES */
+  .gallery-img {
+    width: 80vw;
+    height: 60vh;
+    max-width: 320px;
+    max-height: 420px;
+  }
+
+  .gallery-text {
+    font-size: 22px;
+    padding: 0 20px;
+  }
+
+  /* FRASES */
+  #phrase {
+    font-size: 26px;
+    padding: 25px;
+  }
+
+  /* BOTONES */
+  .continue-btn,
+  .buttons button {
+    width: 85%;
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  /* FINAL */
+  .final-img {
+    width: 70vw;
+    max-width: 240px;
+  }
+
+  .plane {
+    font-size: 60px;
+  }
 }
